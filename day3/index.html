@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+
+        let name = prompt("Enter your name:");
+        let age = prompt("Enter your age:");
+        let address = prompt("Enter your address:");
+
+        let confirmation = confirm("Your name is: " + name + " Age is: " + age + " Address: " + address);
+        console.log(confirmation); // ok => true // cancel => false
+        if(confirmation){
+            // Body of if
+            document.write("<p> Name is: " + name + "</p>")
+            document.write("<p> Age is: " + age + "</p>")
+            document.write("<p> Address is: " + address + "</p>")
+        }else{
+            // Body of else
+            document.write("You've been cancled!")
+        }
+
+    </script>
+    </body>
+</html>

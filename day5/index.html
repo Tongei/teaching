@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            width: 1200px;
+            height: 100vh;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+
+    <div class="container">
+        <div>
+            <h1 id="title"></h1>
+            <p id="desc"></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        a = 3;
+        a += 2;
+        a = a + 2;
+
+        // Inner Text
+        document.getElementById("title").innerText = "Header" // h1
+
+
+        // Inner HTML
+        document.getElementById("desc").innerHTML = "Description"; //p1
+        document.getElementById("desc").innerHTML += "<span> HTML </span>"; //p1
+
+        console.log(document.getElementById("desc").innerHTML);
+
+
+    </script>
+    
+</body>
+</html>
